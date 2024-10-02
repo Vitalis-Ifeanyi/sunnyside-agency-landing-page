@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Barlow;
+    src: url(/Barlow/Barlow-Regular.ttf);
+}
+@font-face {
+    font-family: Fraunces;
+    src: url(/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+body{
+    font-size: 18px;
+    line-height: 4vh;
+    font-family:Barlow;
+    font-weight: bold;
+}
+header{
+    background-image: url(/images/desktop/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+    height: 90vh;
+    padding: 4vh 4vw;
+}
+header>nav>img:last-child{
+    display: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    gap:20px;
+}
+nav ul li:nth-child(4){
+    background-color: white;
+    color: black;
+    font-family: Fraunces;
+    padding: 3px 10px;
+    border-radius: 10px;
+
+}
+header h1{
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 3em;
+    line-height: 10vh;
+    font-family: Fraunces;
+}
+.arrow{
+    margin-top: 7vh;
+    display: block;
+    margin-inline: auto;
+
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+section>div{
+    min-height: 75vh;
+
+}
+section>div>h2{
+    font-family: Fraunces;
+    font-size:xx-large;
+    color: black;
+}
+section>div:nth-child(1){
+    color: grey;
+    padding-inline: 10vw;
+    padding-block: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:25px; 
+}
+section>div:nth-child(2){
+    background-image: url(/images/desktop/image-transform.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+section>div:nth-child(3){
+    background-image: url(/images/desktop/image-stand-out.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
+section>div:nth-child(4){
+    color: grey;
+    padding-inline: 10vw;
+    padding-block: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:25px; 
+}
+section>div:nth-child(5){
+    background-image: url(/images/desktop/image-graphic-design.jpg);
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: hsl(167, 40%, 24%);
+    padding-inline: 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: end;
+    padding-bottom: 5vh;
+}
+section>div:nth-child(6){
+    background-image: url(/images/desktop/image-photography.jpg);
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: hsl(198, 62%, 26%);
+    padding-inline: 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: end;
+    padding-bottom: 10vh;
+}
+section>div:first-child a{
+    font-family: Fraunces;
+    text-decoration-color: hsl(51, 100%, 49%);
+    text-decoration-thickness: 20%;
+}
+section>div:nth-child(4) a{
+    font-family:Fraunces;
+    text-decoration-color:hsl(7, 99%, 70%);
+    text-decoration-thickness: 20%;
+}
+
+main{
+    padding: 10vh 8vw;
+}
+main>div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    line-height: 3vh;
+    gap: 2vh;
+}
+main h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-family: Fraunces;
+    padding-bottom: 10vh;
+    font-size: larger;   
+}
+main>div>div {
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-inline: 4vh;
+    gap: 5vh;
+}
+main>div>div>img{
+    border-radius: 100%;
+    max-width: 5vw;
+}
+main>div>div>div h4{
+    font-family: Fraunces;
+    color: black;
+}
+main>div>div>div p{
+    color:grey
+}
+article{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 60vh;
+}
+article>div:nth-child(1){
+    background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+article>div:nth-child(2){
+    background-image: url(/images/desktop/image-gallery-orange.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+article>div:nth-child(3){
+    background-image: url(/images/desktop/image-gallery-cone.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+article>div:nth-child(4){
+    background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+footer{
+    background-color: hsl(168, 40%, 61%);
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 5vh;
+    gap: 4vh
+}
+footer>div:nth-child(2){
+    display: flex;
+    gap: 6vh;
+}
+footer>div:nth-child(3){
+    display: flex;
+    gap: 4vh;
+}
+footer>div>a>img:hover{
+    background-color: white;
+}
+footer>h1{
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  hsl(168, 39%, 34%);
+}
+footer>div a{
+    color: hsl(168, 34%, 41%);
+    text-decoration:none;
+    font-weight: bold;
+    
+    &:hover{
+        color: white;
+        cursor: pointer;
+    }
+}
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    text-decoration: none;
+     color: hsl(228, 45%, 44%);
+}
+
+@media( width <= 500px ){
+    section{
+        grid-template-columns: 1fr;
+    }
+    nav ul{
+        display: none;
+    }
+    header>nav>img:last-child{
+        display:block;
+    }
+    main>div{
+        grid-template-columns: 1fr;
+        gap: 5vh;
+    }
+    main>div>div {
+        padding: 0vw;
+    }
+    article{
+        grid-template-columns: repeat(2,1fr);
+    }
+    main>div>div>img{
+        max-width: 15vw;
+    }
+    section>div:nth-child(1){
+        text-align: center;
+    }
+    section>div:nth-child(4){
+        text-align: center;
+    }
+    section>div:nth-child(2){
+        order: -1;
+}
+}
