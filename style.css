@@ -280,6 +280,9 @@ footer>div a{
     main>div>div>img{
         max-width: 15vw;
     }
+    section{
+        line-height: auto;
+    }
     section>div:nth-child(1){
         text-align: center;
     }
