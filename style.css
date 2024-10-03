@@ -68,11 +68,10 @@ section{
     grid-template-columns: repeat(2,1fr);
 }
 section>div{
-    min-height: 80vh;
+    min-height:100vh;
 
 }
 section>div>h2{
-    border: 1px solid;
     font-family: Fraunces;
     line-height: 8vh;
     min-width: 25vw;
@@ -152,13 +151,11 @@ section>div:nth-child(4) a{
 }
 
 main{
-    border: 1px solid;
-    padding-inline: 8vw;
-    padding-block: 8vh;
+    padding-inline: 5vw;
+    padding-block: 7vh;
     min-height: 80vh;
 }
 main>div{
-    border:1px solid;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
@@ -183,6 +180,7 @@ main>div>div {
     align-items: center;
     justify-content: center;
     text-align: center;
+    line-height: 6vh;
     padding-inline: 2vh;
     gap: 5vh;
 }
@@ -257,7 +255,6 @@ footer>div a{
     }
 }
 .attribution {
-    border: 1px solid;
     font-size: 11px; text-align: center;
 }
 .attribution a {
